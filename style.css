@@ -1,0 +1,579 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*GENERAL STYLING*/
+body {
+	font-size: 14px;
+	line-height: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #8f8f8f;
+	text-align: left;
+	background-color: white;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*rectangular buttons*/
+
+.button {
+	text-transform: uppercase;
+	color: white;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	border: 1px solid white;
+	height: 35px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button p {
+	margin: 0 auto;
+}
+
+/*circle links*/
+
+.circle a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+/*HEADER STYLES*/
+
+header {
+	background: url("http://unsplash.it/1035") no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	height: 100vh;
+}
+
+header div.wrapper {
+	padding: 20px 0 40px 0;
+}
+
+/*main navigation styles*/
+
+.main-nav {
+	background-color: white;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav .nav-item {
+	width: 60%;
+}
+
+.nav-logo {
+	display: flex;
+	align-items: center;
+}
+
+.main-nav ul li {
+	flex: 3;
+}
+
+.main-nav ul li.icon {
+	flex: 1;
+}
+
+.main-nav ul li a {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	width: 100%;
+	padding: 30px 5px;
+	text-align: center;
+}
+
+.main-nav ul li.icon a {
+	font-size: 1em;
+	}
+
+.main-nav ul li.link:hover {
+	border-bottom: 5px solid #2ecc71;
+	position: relative;
+}
+
+
+nav.main-nav ul li.icon:hover {
+	color: #2ecc71;
+}
+
+/*heading styles*/
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3.3em;
+	line-height: 1.2em;
+	letter-spacing: 0.1em;
+	border: solid 4px white;
+	padding: 10px 20px;
+	margin: 120px 0 10px 0;
+	display: inline-block;
+}
+
+header p.slogan {
+	font-size: 1.1em;
+}
+
+/*two aligned button styles*/
+
+div.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+div.buttons .features {
+	margin-right: 10px;
+}
+
+.features {
+	width: 120px;
+}
+
+.features:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.get-started {
+	background-color: #2ecc71;
+	width: 140px;
+	border: none;
+}
+
+.get-started:hover {
+	background-color: #209050;
+}
+
+/*ODD SECTIONS*/
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 32%;
+	position: relative;
+}
+
+.odd h2, .odd p.slogan {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.odd h2 {
+	color: #222222;
+	font-size: 1.8em;
+	margin-bottom: 0;
+}
+
+.odd p.slogan {
+	font-size: 0.8em;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.odd p.slogan::after {
+	content: " ";
+	position: absolute;
+	top: 40px;
+	/*right: 46%;*/
+	border-width: 1px;
+	border-style: solid;
+	border-color: #2ecc71;
+	/*width: 8%;*/
+	/*Making the ::after same width for all screen sizes;*/
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+	height: 0px;
+}
+/*how to center the ::after so it stays the same size when page is resized?*/
+
+.odd h3 {
+	color: #222222;
+	font-weight: 300;
+}
+
+span.contrast {
+	color: #2ecc71;
+}
+
+/*SECTION: ABOUT US*/
+
+section.about-us p.text {
+	margin-bottom: 50px;
+}
+
+div.read {
+	color: #afafaf;
+	padding: 10px;
+	border: 1px solid #afafaf;
+	width: 120px;
+	height: 37px;
+	position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.read:hover {
+	color: white;
+	border: none;
+	background-color: #2ecc71;
+}
+
+/*SECTION: OUR WORK*/
+
+div.photo-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+/*how to get rid of small space under each "item" overlay?*/
+
+.photo-overlay .view-work {
+	margin: 0 auto;
+	width: 100px;
+}
+
+.our-work ul li:hover .photo-overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.our-work .item {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+/*OUR SERVICES*/
+
+div.img-item {
+	width: 32%;
+}
+
+div.features-item {
+	width: 66%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*is this a better way to lay out this section?*/
+
+div.circle-item {
+	width: 48.5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+div.circle-item div.features-text {
+		width: 75%;
+		font-size: 0.9em;
+}
+
+div.circle-item div.features-text h3 {
+	margin: 0;
+}
+
+div.circle-item div.features-text p {
+	margin-top: 7px;
+}
+
+.circle-icon a {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #dddddd;
+	color: #dddddd;
+}
+
+.circle-icon a:hover {
+	border: none;
+	color: white;
+	background-color: #2ecc71;
+}
+
+/*EVEN SECTIONS STYLES*/
+
+section.even {
+	background: url("http://unsplash.it/1030") no-repeat;
+	background-size: cover;
+}
+
+section.even div.transparency {
+	background-color: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 100%;
+}
+
+.even h2 {
+	font-size: 1.5em;
+	text-align: left;
+	text-transform: uppercase;
+	color: #222222;
+}
+
+.flex-even-item {
+	width: 49%;
+	position: relative;
+}
+
+/*why choose us/best features*/
+
+.best-feature {
+	background-color: white;
+	color: #2a2a2a;
+	border: 1px solid #ececec;
+	display: flex;
+	align-items: baseline;
+}
+
+.best-feature:hover {
+	background-color: #2ecc71;
+	color: white;
+}
+
+.best-feature i {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.separate {
+	margin: 10px 0;
+}
+
+.feature-text {
+	background-color: white;
+	border: 1px solid #ececec;
+	padding: 20px;
+	display: flex;
+}
+
+.feature-text img {
+	margin-right: 20px;
+}
+
+.best-feature-text p {
+	margin: 0;
+}
+
+.feature-nav ul {
+	align-items: flex-end;
+}
+
+.feature-nav ul li {
+	background-color: white;
+	border: 1px solid #ececec;
+	padding: 10px;
+	position: relative;
+}
+
+.feature-nav ul li:hover {
+	padding: 20px;
+	border-top: 3px solid #2ecc71;
+}
+
+/*arrow for select menu item*/
+
+.feature-nav ul li:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /*left: 45%;*/
+  right: calc(50% - 5px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2ecc71 transparent transparent;
+ }
+
+.feature-nav ul li p {
+	margin: 0;
+}
+
+/*business section*/
+
+.flex-even-item img.mac {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*themes section*/
+
+.flex-even-item iframe {
+	width: 100%;
+	height: 250px;
+}
+
+/*even section features button*/
+
+.even div.features {
+	color: #222222;
+	border: 1px solid #222222;
+}
+
+/*EVEN SECTIONS STYLES END*/
+
+/*SPONSOR SECTION*/
+
+section.sponsors li {
+	flex: 1;
+}
+
+section.sponsors li p {
+	margin: 0;
+	font-size: 1.3em;
+	color: #bfbfbf;
+}
+
+section.sponsors li a:hover p {
+	color: #2ecc71;
+}
+
+/*FOOTER STYLES*/
+
+.main-footer {
+	background-color: #2a2a2a;
+}
+
+.main-footer h4 {
+	color: white;
+	font-size: 1.1em;
+}
+
+.main-footer div.footer-item {
+	width: 23.5%;
+}
+
+/*footer column 1*/
+
+.main-footer .read-line {
+	display: flex;
+	align-items: baseline;
+}
+
+.main-footer .read-more {
+	text-transform: uppercase;
+	margin: 0 5px 0 0;
+}
+
+.main-footer .fa-angle-double-right {
+	color: #2ecc71; 
+}
+
+/*footer column 2*/
+
+.footer-item .contact {
+	display: flex;
+	align-items: baseline;
+}
+
+.footer-item i {
+	margin-right: 10px;
+}
+
+.footer-item .contact p {
+	margin: 3px 0;
+}
+
+/*footer column 3 styling goes here*/
+
+
+
+/*footer column 4*/
+
+.footer-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-item .tag-item {
+	background-color: #3f3f3f;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 5px 10px;
+}
+
+.footer-item .tag-item:hover {
+	background-color: #505050;
+}
+
+.footer-item .tag-item p {
+	margin: 0;
+}
+
+/*footer bottom styles*/
+
+.bottom {
+	background-color: #222222;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+/*ul is too big and makes copyright fall to next line*/
+
+.social-nav-circle a {
+	background-color: #3f3f3f;
+	color: white;
+	text-decoration: none;
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.social-nav-circle a:hover {
+	background-color: #505050;
+}
+
