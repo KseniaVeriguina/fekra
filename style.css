@@ -396,6 +396,10 @@ section.even div.transparency {
 	display: flex;
 }
 
+.feature-text-pic {
+	margin-right: 4%;
+}
+
 .feature-text img {
 	margin-right: 20px;
 }
